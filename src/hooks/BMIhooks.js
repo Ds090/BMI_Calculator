@@ -10,11 +10,11 @@ function BMIhooks() {
   const calculateBMI = () => {
     setisLoading(true);
     setTimeout(() => {
-      const WeightInkg = parseFloat(Weight);
-      const HeightIncm = parseFloat(Height) / 100;
+      const WeightInkg = parseFloat(Weight) * 2.2;
+      const HeightIncm = parseFloat(Height) * 12;
 
       if (WeightInkg > 0 && HeightIncm > 0) {
-        const bmivalue = WeightInkg / (HeightIncm * HeightIncm);
+        const bmivalue = (WeightInkg / (HeightIncm * HeightIncm)) * 703;
         setResult(bmivalue.toFixed(1));
       } else {
         alert("Please Enter Any Input!");

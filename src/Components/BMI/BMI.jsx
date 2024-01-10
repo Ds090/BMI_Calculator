@@ -13,7 +13,7 @@ function BMICalculator() {
       <img src="https://cdn-icons-png.flaticon.com/128/4349/4349072.png" alt="" className="w-[40px]"/>
       </div>
       <div className="w-[90%] h-[22%] rounded-lg flex flex-col items-center gap-2 shadow-sm shadow-black">
-        <label className="text-xl font-bold font-serif">Height (cm)</label>
+        <label className="text-xl font-bold font-serif">Height (feet)</label>
         <input
           type="number"
           onInput={(e) => setHeight(e.target.value)}
